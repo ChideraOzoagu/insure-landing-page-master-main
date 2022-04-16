@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+:root {
+    --Darkviolet: hsl(256, 26%, 20%);
+    --Grayishblue: hsl(216, 30%, 68%);
+    --verydarkviolet: hsl(270, 9%, 17%);
+    --darkgrayishviolet: hsl(273, 4%, 51%);
+    --verylightgray: hsl(0, 0%, 98%);
+}
+.attribution { 
+     font-size: 11px;
+     text-align: center; 
+    margin-top: 10px;
+}
+    .attribution a { color: hsl(228, 45%, 44%); 
+}
+body {
+    font-family: 'Karla', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'DM Serif Display', sans-serif;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.intro-mobile {
+    width: 100%;
+}
+header ul {
+    display: none;
+}
+
+@media screen and (min-width:768px) {
+    .intro-mobile {
+        display: none;
+    }
+}
+.intro-desktop {
+    width: 400px;
+}
+ @media screen and (max-width:768px) {
+     .intro-desktop,
+     .introleft-desktop,
+     .introright-desktop {
+         display: none;
+     }
+ }
+.intro {
+    color: hsl(0, 0%, 98%);
+    background-color: hsl(256, 26%, 20%);
+}
+.intro > div {
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+}
+.introleft-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.introright-img {
+    position: absolute;
+    right: 0;
+    bottom: -150px;
+}
+.intro > div > h1 {
+    font-size: 2rem;
+}
+.intro > div > p {
+    padding: 20px 0;
+    line-height: 1.7;
+}
+button {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: hsl(0, 0%, 98%);
+    border: 2px solid hsl(0, 0%, 98%);
+    text-transform: uppercase;
+    margin-top: 15px; 
+    font-size: 14px;
+    font-weight: 700;
+}
+.pad {
+    padding: 40px 0;
+    border-bottom: 1px solid hsl(273, 4%, 51%);
+    width: 150px;
+    margin: 0 auto;
+}
+.border-head {
+    padding: 20px 0;
+}
+section {
+    text-align: center;
+    color:hsl(270, 9%, 17%);
+    padding: 30px;
+}
+.icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70px;
+}
+section h3,
+section img,
+section p {
+    padding: 10px 0;
+}
+.more-info {
+    position: relative;
+    background-color: hsl(256, 26%, 20%);
+    color:hsl(0, 0%, 98%);
+    text-align: center;
+    padding: 50px;
+    margin: 50px 30px;
+}
+.moreinfo-mobile {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+/* media query for more-info image */
+@media screen and (min-width:768px) {
+    .moreinfo-mobile {
+        display: none;
+    }
+    
+}
+@media screen and (max-width:768px) {
+    .moreinfo-desktop {
+        display: none
+    }
+}
+.socials {
+    padding: 0px 5px;
+}
+footer > section {
+    padding: 50px 0;
+}
+.border-btm {
+    border-bottom: 1px solid hsl(273, 4%, 51%);
+    padding: 10px 0;
+    width: 90%;
+    margin: 0 auto;
+}
+footer {
+    background-color: hsl(0, 0%, 98%);
+    margin: 20px 0; 
+}
+.footer-nav {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight:700;
+}
+.title {
+    color:hsl(273, 4%, 51%);
+    padding: 20px 0;
+}   
+ul {
+    list-style-type: none;
+}
+li {
+    padding: 5px 0;
+}
+ li a {
+     text-decoration: none;
+     color:hsl(270, 9%, 17%);
+}
+.footersection {
+    position: relative;
+}
+.footermobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+/* media query for footer images */
+@media screen and (min-width:480px) {
+    .footermobile {
+        display: none;
+    }
+    .footerdesktop {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 400px;
+    }
+}
+@media screen and (max-width:480px) {
+    .footerdesktop {
+        display: none;
+    }
+}
+/* General media queries */
+@media screen and (min-width:768px) {
+    .insure-uses {
+        text-align: left;
+        padding: 40px;
+    }
+    .pad {
+        margin: 0;
+    }
+    .icon {
+        margin: 0;
+    }
+    .flex-desktop {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .flex-socials {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 40px;
+    }
+    .footer-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 30px
+    }
+    .more-info {
+        text-align: left;
+    }
+    .moreinfo-flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .moreinfo-flex > h1 {
+        max-width: 300px;
+    }
+    /* .moreinfo-desktop {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        z-index: 0;
+    } */
+    .intro {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row-reverse;
+        padding: 30px;
+        position: relative;
+    }
+    
+    .introleft-desktop {
+        position: absolute; 
+        top: 70%;
+        right: 100%;
+        width: 150px;
+    }
+    .intro-desktop {
+        margin-bottom: -200px;
+    }
+    .intro > div {
+        text-align: left;
+        position: relative;
+        width: 600px;
+    }
+    .intro > div > h1 {
+        font-size: 50px;
+    }
+    .introleft-img,
+    .introright-img {
+        display: none;
+    }
+    .intro > div > h1::before {
+        content: '';
+        width: 200px;
+        height: 1px;
+        background-color: white;
+        position: absolute;
+        top: 50px;
+    }
+    .bars {
+        display: none;
+    }
+    header {
+        padding: 10px 20px;
+    }
+     header ul {
+        display: flex;
+        list-style-type: none;
+        text-transform: uppercase;
+    }
+    header li a {
+        padding: 10px 15px;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    header li a:hover {
+        color:hsl(228, 45%, 44%)
+    }
+    .active-nav a {
+        border: 1px solid hsl(270, 9%, 17%);
+        color: hsl(270, 9%, 17%);
+        font-weight: 700;
+    }
+    .active-nav a:hover {
+        background-color: hsl(270, 9%, 17%);
+        color: hsl(0, 0%, 98%);
+    }
+    button:hover,
+    .moreinfo-flex > button:hover {
+        background-color: hsl(0, 0%, 98%);
+        color: hsl(270, 9%, 17%);
+        cursor: pointer;
+        z-index: 1;
+
+    }
+    .socials:hover {
+        color: hsl(270, 9%, 17%) !important;
+        cursor: pointer;
+    }
+    footer li a:hover {
+        text-decoration: underline;
+    }
+}
